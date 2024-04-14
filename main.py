@@ -78,7 +78,7 @@ def print_results(results: Dict[bytes, List[float]]):
     print("{", end="")
     for location, measurements in sorted(results.items()):
         print(
-            f'{location.decode('UTF8')}='
+            f'{location.decode("UTF8")}='
             f'{measurements[0]}/'
             f'{(measurements[1]) / measurements[3]:.1f}/'
             f'{(measurements[2])}',
